@@ -355,7 +355,7 @@ header {
   margin-left: 10px;
 }
 
-.icon-link {
+.social-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -367,8 +367,8 @@ header {
   transition: color var(--transion-values), background-color var(--transion-values);
 }
 
-.icon-item > .icon-link:hover,
-.icon-item > .icon-link:focus {
+.icon-item > .social-link:hover,
+.icon-item > .social-link:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
@@ -384,6 +384,9 @@ header {
 }
 
 .customer-list .icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 92px;
 
@@ -397,7 +400,6 @@ header {
 .customer-list .icon-link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
-  background-color: var(--white-color);
 }
 
 .icon-customers {
@@ -565,7 +567,7 @@ footer .container {
   color: var(--white-color);
 }
 
-.social-wrapper .icon-link {
+.social-wrapper .social-link {
   color: var(--white-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -621,7 +623,7 @@ footer .logo {
   visibility: visible;
   opacity: 1;
   transform: scale(1);
-  transition: transform var(--transion-values), opacity var(--transion-values);
+  transition: transform var(--transion-values), visibility var(--transion-values), opacity var(--transion-values);
 }
 
 .backdrope.is-hidden {
